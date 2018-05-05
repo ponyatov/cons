@@ -7,11 +7,11 @@
 
 var indexSectionsWithContent =
 {
-  0: "_gpr",
+  0: "_aefghmprs",
   1: "g",
   2: "p",
-  3: "_r",
-  4: "g",
+  3: "_ar",
+  4: "aefghms",
   5: "g"
 };
 

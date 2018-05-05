@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['gui',['GUI',['../group__gui.html',1,'']]],
-  ['gui_5fthread',['GUI_thread',['../classpy_1_1GUI__thread.html',1,'py']]],
-  ['gui_5fthread',['gui_thread',['../group__gui.html#gabec5c66aac40f2cf3ad4b7e9e21c4614',1,'py']]]
+  ['about',['about',['../classpy_1_1GUI__thread.html#a4a04d4743227958dd091d682510ed97f',1,'py.GUI_thread.about()'],['../classpy_1_1GUI__thread.html#ad05cae645ef96684f595fc049c987213',1,'py.GUI_thread.About']]],
+  ['app',['app',['../classpy_1_1GUI__thread.html#a8cd4da54184bb94ff6a928dda43c2f8e',1,'py::GUI_thread']]]
 ];
