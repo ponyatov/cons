@@ -10,7 +10,7 @@ var indexSectionsWithContent =
   0: "_aefghmprs",
   1: "g",
   2: "p",
-  3: "_ar",
+  3: "_ars",
   4: "aefghms",
   5: "g"
 };
