@@ -27,3 +27,7 @@ http://thinking-forth.sourceforge.net/tf-kindle.pdf
 
 http://sinclairql.speccy.org/archivo/docs/books/Threaded_interpretive_languages.pdf
 
+- IPS - High Level Programming of Small Systems (c) Dr Karl Meinzer
+
+ - http://www.jrmiller.demon.co.uk/products/ipsbk.html
+ - http://groups.google.com/forum/#!topic/comp.lang.forth/ErIrZI5ez8U
