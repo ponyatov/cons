@@ -26,8 +26,3 @@ http://thinking-forth.sourceforge.net/tf-kindle.pdf
 - Threaded Interpretive Languages: Their Design and Implementation (c) R. G. Loeliger [PDF]
 
 http://sinclairql.speccy.org/archivo/docs/books/Threaded_interpretive_languages.pdf
-
-- IPS - High Level Programming of Small Systems (c) Dr Karl Meinzer
-
- * http://www.jrmiller.demon.co.uk/products/ipsbk.html
- * http://groups.google.com/forum/#!topic/comp.lang.forth/ErIrZI5ez8U

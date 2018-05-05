@@ -37,6 +37,13 @@ class GUI_thread(threading.Thread):
         ## editor area
         self.editor = self.main.control = wx.stc.StyledTextCtrl(self.main)
         self.ReOpen(None)
+        ## font scaling Ctrl +/-
+        self.editor.CmdKeyAssign(ord('='),wx.stc.STC_SCMOD_CTRL,wx.stc.STC_CMD_ZOOMIN )
+        self.editor.CmdKeyAssign(ord('-'),wx.stc.STC_SCMOD_CTRL,wx.stc.STC_CMD_ZOOMOUT)
+        ## configure font size
+        W,H = wx.GetDisplaySize()
+        self.editor.StyleSetFont(wx.stc.STC_STYLE_DEFAULT, \
+            wx.Font(H>>4, wx.FONTFAMILY_MODERN, wx.NORMAL, wx.NORMAL))
         ## status bar
         self.status = wx.StatusBar(self.main)
         self.main.SetStatusBar(self.status)
@@ -45,7 +52,7 @@ class GUI_thread(threading.Thread):
         F = open(filename) ; self.editor.SetValue(F.read()) ; F.close()
     ## about event handler
     def About(self,e):
-        F = open('README.md') ; wx.MessageBox(F.read()) ; F.close()
+        F = open('README.md') ; wx.MessageBox(F.read(111)) ; F.close()
     ## activate GUI elements only on thread start
     ## (interpreter system can run in headless mode) 
     def run(self):
