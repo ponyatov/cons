@@ -6,7 +6,7 @@ import os,sys
 ## @defgroup gui GUI
 ## @{
 
-import wx,threading
+import wx,wx.stc,threading
 
 ## GUI processing thread
 class GUI_thread(threading.Thread):
@@ -34,6 +34,15 @@ class GUI_thread(threading.Thread):
         ## help/about
         self.about = self.help.Append(wx.ID_ABOUT,'&About\tF1')
         self.main.Bind(wx.EVT_MENU, self.About, self.about)
+        ## editor area
+        self.editor = self.main.control = wx.stc.StyledTextCtrl(self.main)
+        self.ReOpen(None)
+        ## status bar
+        self.status = wx.StatusBar(self.main)
+        self.main.SetStatusBar(self.status)
+    ## reopen file in editor
+    def ReOpen(self,e,filename='src.src'):
+        F = open(filename) ; self.editor.SetValue(F.read()) ; F.close()
     ## about event handler
     def About(self,e):
         F = open('README.md') ; wx.MessageBox(F.read()) ; F.close()
