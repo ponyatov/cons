@@ -5,7 +5,7 @@
 
 github: https://github.com/ponyatov/cons
 
+manual: http://ponyatov.github.io/cons
+
 @see @ref forth
 @see @ref wx
-
-http://github.com/ponyatov/cons/docs
