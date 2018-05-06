@@ -3,10 +3,32 @@
 
 import os,sys
 
+# we'll use threaded VM/GUI/HTTP to avoid lockups and system falls
+import threading,Queue
+
+## @defgroup fvm o/FORTH Virtual Machine
+## @{
+
+## queue will hold source code requests from GUI frontend
+SRC = Queue.Queue()
+
+## `o/FORTH` Virtual machine (thread will not fail system on errors)
+class FVM_thread(threading.Thread):
+    ## construct VM will execute FORTH requests from GUI frontend
+    def __init__(self):
+        threading.Thread.__init__(self)
+    ## request queue processing
+    def run(self):
+        while True: print SRC.get()
+## command processing thread
+fvm_thread = FVM_thread()
+
+## @}
+
 ## @defgroup gui GUI
 ## @{
 
-import wx,wx.stc,threading
+import wx,wx.stc
 
 ## GUI processing thread
 class GUI_thread(threading.Thread):
@@ -47,9 +69,6 @@ class GUI_thread(threading.Thread):
         ## editor: use StyledText widget with rich syntax coloring
         self.editor = self.main.control = wx.stc.StyledTextCtrl(self.main)
         self.ReOpen(None)
-        ## font scaling Ctrl +/-
-        self.editor.CmdKeyAssign(ord('='),wx.stc.STC_SCMOD_CTRL,wx.stc.STC_CMD_ZOOMIN )
-        self.editor.CmdKeyAssign(ord('-'),wx.stc.STC_SCMOD_CTRL,wx.stc.STC_CMD_ZOOMOUT)
         ## configure font size
         W,H = self.main.GetClientSize()
         self.editor.StyleSetFont(wx.stc.STC_STYLE_DEFAULT, \
@@ -58,6 +77,21 @@ class GUI_thread(threading.Thread):
         self.editor.SetMargins(5,0)
         self.editor.SetMarginType(1,wx.stc.STC_MARGIN_NUMBER)
         self.editor.SetMarginWidth(1,55)
+        # bind keys
+        ## font scaling Ctrl +/-
+        self.editor.CmdKeyAssign(ord('='),wx.stc.STC_SCMOD_CTRL,wx.stc.STC_CMD_ZOOMIN )
+        self.editor.CmdKeyAssign(ord('-'),wx.stc.STC_SCMOD_CTRL,wx.stc.STC_CMD_ZOOMOUT)
+        ## run code on Ctrl-Enter
+        self.editor.Bind(wx.EVT_CHAR,self.onChar)
+    ## event handler: process keyboard events
+    def onChar(self,e):
+        key = e.GetKeyCode()
+        ctrl = e.CmdDown()
+        shift = e.ShiftDown()
+        if key == 13 and ( ctrl or shift ): 
+            SRC.put ( e.GetEventObject().GetSelectedText() )
+        else:
+            e.Skip()
     ## reopen file in editor
     def ReOpen(self,e,filename='src.src'):
         F = open(filename) ; self.editor.SetValue(F.read()) ; F.close()
