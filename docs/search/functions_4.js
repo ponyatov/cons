@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['setupeditor',['SetupEditor',['../classpy_1_1GUI__thread.html#aba85e0fade6c0f79fd7abf14bd3c52f8',1,'py::GUI_thread']]],
-  ['setupmenu',['SetupMenu',['../classpy_1_1GUI__thread.html#a22dd1da2ff0b79deafb61ee4b4de00a1',1,'py::GUI_thread']]]
+  ['interpret',['INTERPRET',['../group__interpret.html#ga138ac0cd57a7e1c2ea2efef7f4abe399',1,'py::FVM']]]
 ];

@@ -1,3 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node2" href="$classpy_1_1GUI__thread.html" title="GUI processing thread. " alt="" coords="116,5,223,32"/>
+<area shape="rect" id="node1" href="$classpy_1_1Sym.html" title="base Symbolic object " alt="" coords="5,5,72,32"/>
+<area shape="rect" id="node2" href="$classpy_1_1FVM.html" title="o/FORTH Virtual Machine " alt="" coords="120,5,188,32"/>
 </map>

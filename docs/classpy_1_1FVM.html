@@ -21,6 +21,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">interactive console
    </div>
@@ -37,6 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
@@ -71,7 +73,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Modules</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Modules</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -88,45 +90,144 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="classpy_1_1FVM-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">py.FVM Class Reference<div class="ingroups"><a class="el" href="group__fvm.html">o/FORTH Virtual Machine</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>virtual machine thread: will not fail system on errors  
+<p><code>o/FORTH</code> Virtual Machine  
  <a href="classpy_1_1FVM.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for py.FVM:</div>
 <div class="dyncontent">
 <div class="center"><img src="classpy_1_1FVM__inherit__graph.png" border="0" usemap="#py_8FVM_inherit__map" alt="Inheritance graph"/></div>
+<map name="py_8FVM_inherit__map" id="py_8FVM_inherit__map">
+<area shape="rect" id="node2" href="classpy_1_1Sym.html" title="base Symbolic object " alt="" coords="6,5,73,32"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
 Collaboration diagram for py.FVM:</div>
 <div class="dyncontent">
 <div class="center"><img src="classpy_1_1FVM__coll__graph.png" border="0" usemap="#py_8FVM_coll__map" alt="Collaboration graph"/></div>
+<map name="py_8FVM_coll__map" id="py_8FVM_coll__map">
+<area shape="rect" id="node2" href="classpy_1_1Sym.html" title="base Symbolic object " alt="" coords="6,5,73,32"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a8514331c6283bd911151ecf45105e976"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8514331c6283bd911151ecf45105e976"></a>
-def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpy_1_1FVM.html#a8514331c6283bd911151ecf45105e976">__init__</a></td></tr>
-<tr class="memdesc:a8514331c6283bd911151ecf45105e976"><td class="mdescLeft">&#160;</td><td class="mdescRight">construct VM will execute FORTH requests from GUI frontend <br /></td></tr>
+<tr class="memitem:a8514331c6283bd911151ecf45105e976"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpy_1_1FVM.html#a8514331c6283bd911151ecf45105e976">__init__</a></td></tr>
+<tr class="memdesc:a8514331c6283bd911151ecf45105e976"><td class="mdescLeft">&#160;</td><td class="mdescRight">start VM  <a href="#a8514331c6283bd911151ecf45105e976">More...</a><br /></td></tr>
 <tr class="separator:a8514331c6283bd911151ecf45105e976"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab518bb3f62dfe9a946051633f2be18ae"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab518bb3f62dfe9a946051633f2be18ae"></a>
-def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpy_1_1FVM.html#ab518bb3f62dfe9a946051633f2be18ae">run</a></td></tr>
-<tr class="memdesc:ab518bb3f62dfe9a946051633f2be18ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">request queue processing <br /></td></tr>
-<tr class="separator:ab518bb3f62dfe9a946051633f2be18ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0b512fe5b51ad97297e57604a58cc668"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__interpret.html#ga0b512fe5b51ad97297e57604a58cc668">WORD</a></td></tr>
+<tr class="memdesc:ga0b512fe5b51ad97297e57604a58cc668"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>WORD ( -- wordname )</code> fetch next word (token) from source code  <a href="group__interpret.html#ga0b512fe5b51ad97297e57604a58cc668">More...</a><br /></td></tr>
+<tr class="separator:ga0b512fe5b51ad97297e57604a58cc668"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga138ac0cd57a7e1c2ea2efef7f4abe399"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga138ac0cd57a7e1c2ea2efef7f4abe399"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__interpret.html#ga138ac0cd57a7e1c2ea2efef7f4abe399">INTERPRET</a></td></tr>
+<tr class="memdesc:ga138ac0cd57a7e1c2ea2efef7f4abe399"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>INTERPRET ( -- )</code> source code parser/compiler <br /></td></tr>
+<tr class="separator:ga138ac0cd57a7e1c2ea2efef7f4abe399"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classpy_1_1Sym"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classpy_1_1Sym')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classpy_1_1Sym.html">py.Sym</a></td></tr>
+<tr class="memitem:ac74d5444d4065b646650e3d6e60e224c inherit pub_methods_classpy_1_1Sym"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpy_1_1Sym.html#ac74d5444d4065b646650e3d6e60e224c">__init__</a></td></tr>
+<tr class="memdesc:ac74d5444d4065b646650e3d6e60e224c inherit pub_methods_classpy_1_1Sym"><td class="mdescLeft">&#160;</td><td class="mdescRight">construct symbol  <a href="#ac74d5444d4065b646650e3d6e60e224c">More...</a><br /></td></tr>
+<tr class="separator:ac74d5444d4065b646650e3d6e60e224c inherit pub_methods_classpy_1_1Sym"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab49b3d0b22623cd9415a6664653aebba inherit pub_methods_classpy_1_1Sym"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gab49b3d0b22623cd9415a6664653aebba"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dump.html#gab49b3d0b22623cd9415a6664653aebba">__repr__</a></td></tr>
+<tr class="memdesc:gab49b3d0b22623cd9415a6664653aebba inherit pub_methods_classpy_1_1Sym"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>print sym</code> in readable form <br /></td></tr>
+<tr class="separator:gab49b3d0b22623cd9415a6664653aebba inherit pub_methods_classpy_1_1Sym"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga50c1a0c3e46a44fc42076642bcccf492 inherit pub_methods_classpy_1_1Sym"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dump.html#ga50c1a0c3e46a44fc42076642bcccf492">dump</a></td></tr>
+<tr class="memdesc:ga50c1a0c3e46a44fc42076642bcccf492 inherit pub_methods_classpy_1_1Sym"><td class="mdescLeft">&#160;</td><td class="mdescRight">dump object in full tree form  <a href="group__dump.html#ga50c1a0c3e46a44fc42076642bcccf492">More...</a><br /></td></tr>
+<tr class="separator:ga50c1a0c3e46a44fc42076642bcccf492 inherit pub_methods_classpy_1_1Sym"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2fce9222c3fb67f992969f13fd2edd48 inherit pub_methods_classpy_1_1Sym"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dump.html#ga2fce9222c3fb67f992969f13fd2edd48">head</a></td></tr>
+<tr class="memdesc:ga2fce9222c3fb67f992969f13fd2edd48 inherit pub_methods_classpy_1_1Sym"><td class="mdescLeft">&#160;</td><td class="mdescRight">dump object in short header-only <code>&lt;T:V&gt;</code> form  <a href="group__dump.html#ga2fce9222c3fb67f992969f13fd2edd48">More...</a><br /></td></tr>
+<tr class="separator:ga2fce9222c3fb67f992969f13fd2edd48 inherit pub_methods_classpy_1_1Sym"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaac5173d31400871046936538cc8a5635 inherit pub_methods_classpy_1_1Sym"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaac5173d31400871046936538cc8a5635"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__dump.html#gaac5173d31400871046936538cc8a5635">pad</a></td></tr>
+<tr class="memdesc:gaac5173d31400871046936538cc8a5635 inherit pub_methods_classpy_1_1Sym"><td class="mdescLeft">&#160;</td><td class="mdescRight">pad from left with tabs in tree output <br /></td></tr>
+<tr class="separator:gaac5173d31400871046936538cc8a5635 inherit pub_methods_classpy_1_1Sym"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga310e01ff8e287649e58c28a0c0a2aea2 inherit pub_methods_classpy_1_1Sym"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga310e01ff8e287649e58c28a0c0a2aea2"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__attr.html#ga310e01ff8e287649e58c28a0c0a2aea2">__setitem__</a></td></tr>
+<tr class="memdesc:ga310e01ff8e287649e58c28a0c0a2aea2 inherit pub_methods_classpy_1_1Sym"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>sym[key]=o</code> operator <br /></td></tr>
+<tr class="separator:ga310e01ff8e287649e58c28a0c0a2aea2 inherit pub_methods_classpy_1_1Sym"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafaf89b5641c20a1674f35710b9ed05a0 inherit pub_methods_classpy_1_1Sym"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gafaf89b5641c20a1674f35710b9ed05a0"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nest.html#gafaf89b5641c20a1674f35710b9ed05a0">push</a></td></tr>
+<tr class="memdesc:gafaf89b5641c20a1674f35710b9ed05a0 inherit pub_methods_classpy_1_1Sym"><td class="mdescLeft">&#160;</td><td class="mdescRight">push element stack-like <br /></td></tr>
+<tr class="separator:gafaf89b5641c20a1674f35710b9ed05a0 inherit pub_methods_classpy_1_1Sym"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a88ffeddce9a817b15c2c7a5203d7cf6f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a88ffeddce9a817b15c2c7a5203d7cf6f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpy_1_1FVM.html#a88ffeddce9a817b15c2c7a5203d7cf6f">lexer</a></td></tr>
+<tr class="memdesc:a88ffeddce9a817b15c2c7a5203d7cf6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">lexer will be used for parsing <br /></td></tr>
+<tr class="separator:a88ffeddce9a817b15c2c7a5203d7cf6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_classpy_1_1Sym"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classpy_1_1Sym')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classpy_1_1Sym.html">py.Sym</a></td></tr>
+<tr class="memitem:a7efe3be62c6b6e24dfee535153238d8a inherit pub_attribs_classpy_1_1Sym"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7efe3be62c6b6e24dfee535153238d8a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpy_1_1Sym.html#a7efe3be62c6b6e24dfee535153238d8a">tag</a></td></tr>
+<tr class="memdesc:a7efe3be62c6b6e24dfee535153238d8a inherit pub_attribs_classpy_1_1Sym"><td class="mdescLeft">&#160;</td><td class="mdescRight">type/class tag <br /></td></tr>
+<tr class="separator:a7efe3be62c6b6e24dfee535153238d8a inherit pub_attribs_classpy_1_1Sym"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d45f25b5ab3c8a281ec8c70c707887c inherit pub_attribs_classpy_1_1Sym"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2d45f25b5ab3c8a281ec8c70c707887c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpy_1_1Sym.html#a2d45f25b5ab3c8a281ec8c70c707887c">val</a></td></tr>
+<tr class="memdesc:a2d45f25b5ab3c8a281ec8c70c707887c inherit pub_attribs_classpy_1_1Sym"><td class="mdescLeft">&#160;</td><td class="mdescRight">single object value <br /></td></tr>
+<tr class="separator:a2d45f25b5ab3c8a281ec8c70c707887c inherit pub_attribs_classpy_1_1Sym"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9a257df92cee6179ccd619d50b2cd57 inherit pub_attribs_classpy_1_1Sym"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa9a257df92cee6179ccd619d50b2cd57"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpy_1_1Sym.html#aa9a257df92cee6179ccd619d50b2cd57">attr</a></td></tr>
+<tr class="memdesc:aa9a257df92cee6179ccd619d50b2cd57 inherit pub_attribs_classpy_1_1Sym"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>attr{}</code>ibutes <br /></td></tr>
+<tr class="separator:aa9a257df92cee6179ccd619d50b2cd57 inherit pub_attribs_classpy_1_1Sym"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99df090eab07b76967b0df32d6173fa8 inherit pub_attribs_classpy_1_1Sym"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a99df090eab07b76967b0df32d6173fa8"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classpy_1_1Sym.html#a99df090eab07b76967b0df32d6173fa8">nest</a></td></tr>
+<tr class="memdesc:a99df090eab07b76967b0df32d6173fa8 inherit pub_attribs_classpy_1_1Sym"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>nest[]</code>ed elements <br /></td></tr>
+<tr class="separator:a99df090eab07b76967b0df32d6173fa8 inherit pub_attribs_classpy_1_1Sym"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>virtual machine thread: will not fail system on errors </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+<div class="textblock"><p><code>o/FORTH</code> Virtual Machine </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a8514331c6283bd911151ecf45105e976"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def py.FVM.__init__ </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>V</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>src</em> = <code>''</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>start VM </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">V</td><td>VM name </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">src</td><td>source code will be interpreted </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="py_8py.html">py.py</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 6 2018 11:06:00 for interactive console by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun May 6 2018 14:07:35 for interactive console by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

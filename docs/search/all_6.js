@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['main',['main',['../classpy_1_1GUI__thread.html#a5a04e2742178d60b57ca525e7f5b3c58',1,'py::GUI_thread']]],
-  ['menubar',['menubar',['../classpy_1_1GUI__thread.html#a7beed7dbc2b1181c0f50013fc0ea9865',1,'py::GUI_thread']]]
+  ['head',['head',['../group__dump.html#ga2fce9222c3fb67f992969f13fd2edd48',1,'py::Sym']]],
+  ['help',['help',['../classpy_1_1GUI__thread.html#a2632b811f6c87664085a59ec8ff6841c',1,'py::GUI_thread']]]
 ];

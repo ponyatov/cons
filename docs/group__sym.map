@@ -1,0 +1,5 @@
+<map id="Symbolic object system" name="Symbolic object system">
+<area shape="rect" id="node1" href="$group__nest.html" title="any object can hold nested elements, data in order, and use it in stack&#45;like way (push/pop/...) " alt="" coords="216,5,389,47"/>
+<area shape="rect" id="node2" href="$group__attr.html" title="any object can be used as associative array, or can have slots to implement OOP mechanics ..." alt="" coords="238,71,367,112"/>
+<area shape="rect" id="node4" href="$group__dump.html" title="objects in human&#45;readable form for debugging " alt="" coords="274,137,331,163"/>
+</map>
