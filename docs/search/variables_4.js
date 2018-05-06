@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['help',['help',['../classpy_1_1GUI__thread.html#a2632b811f6c87664085a59ec8ff6841c',1,'py::GUI_thread']]]
+  ['gui_5fthread',['gui_thread',['../group__gui.html#gabec5c66aac40f2cf3ad4b7e9e21c4614',1,'py']]]
 ];

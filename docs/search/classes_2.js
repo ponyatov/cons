@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['sym',['Sym',['../classpy_1_1Sym.html',1,'py']]]
+  ['method',['Method',['../classpy_1_1Method.html',1,'py']]]
 ];

@@ -100,9 +100,24 @@ Modules</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ga952f2e51e958e53a3caed9cbaabfdff6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga952f2e51e958e53a3caed9cbaabfdff6"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__interpret.html#ga952f2e51e958e53a3caed9cbaabfdff6">py.FVM.colon</a></td></tr>
+<tr class="memdesc:ga952f2e51e958e53a3caed9cbaabfdff6"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>: ( -- )</code> start new word (colon) definition <br /></td></tr>
+<tr class="separator:ga952f2e51e958e53a3caed9cbaabfdff6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabc94841419435a7eee822343ec424907"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gabc94841419435a7eee822343ec424907"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__interpret.html#gabc94841419435a7eee822343ec424907">py.FVM.semicolon</a></td></tr>
+<tr class="memdesc:gabc94841419435a7eee822343ec424907"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>; ( -- )</code> end colon definition <br /></td></tr>
+<tr class="separator:gabc94841419435a7eee822343ec424907"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0b512fe5b51ad97297e57604a58cc668"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__interpret.html#ga0b512fe5b51ad97297e57604a58cc668">py.FVM.WORD</a></td></tr>
 <tr class="memdesc:ga0b512fe5b51ad97297e57604a58cc668"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>WORD ( -- wordname )</code> fetch next word (token) from source code  <a href="#ga0b512fe5b51ad97297e57604a58cc668">More...</a><br /></td></tr>
 <tr class="separator:ga0b512fe5b51ad97297e57604a58cc668"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9ec29efd79ed27f0cb8cdd0bba492228"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__interpret.html#ga9ec29efd79ed27f0cb8cdd0bba492228">py.FVM.FIND</a></td></tr>
+<tr class="memdesc:ga9ec29efd79ed27f0cb8cdd0bba492228"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>FIND ( name -- xt|name )</code> find executable object in vocabulary  <a href="#ga9ec29efd79ed27f0cb8cdd0bba492228">More...</a><br /></td></tr>
+<tr class="separator:ga9ec29efd79ed27f0cb8cdd0bba492228"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae62f1005956ba121712918f321d89dac"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gae62f1005956ba121712918f321d89dac"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__interpret.html#gae62f1005956ba121712918f321d89dac">py.FVM.EXECUTE</a></td></tr>
+<tr class="memdesc:gae62f1005956ba121712918f321d89dac"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>EXECUTE ( xt -- )</code> run object with executable semantics <br /></td></tr>
+<tr class="separator:gae62f1005956ba121712918f321d89dac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga138ac0cd57a7e1c2ea2efef7f4abe399"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga138ac0cd57a7e1c2ea2efef7f4abe399"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__interpret.html#ga138ac0cd57a7e1c2ea2efef7f4abe399">py.FVM.INTERPRET</a></td></tr>
 <tr class="memdesc:ga138ac0cd57a7e1c2ea2efef7f4abe399"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>INTERPRET ( -- )</code> source code parser/compiler <br /></td></tr>
@@ -110,6 +125,25 @@ def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="ga9ec29efd79ed27f0cb8cdd0bba492228"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def py.FVM.FIND </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>FIND ( name -- xt|name )</code> find executable object in vocabulary </p>
+<dl class="section return"><dt>Returns</dt><dd>found flag or not found name </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="ga0b512fe5b51ad97297e57604a58cc668"></a>
 <div class="memitem">
 <div class="memproto">
@@ -132,7 +166,7 @@ def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 6 2018 14:07:35 for interactive console by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun May 6 2018 21:05:36 for interactive console by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>

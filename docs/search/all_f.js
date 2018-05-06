@@ -1,10 +1,14 @@
 var searchData=
 [
-  ['t_5ferror',['t_error',['../group__ply.html#gad4bc440db1715bbc400b85ef2b9ebefa',1,'py']]],
-  ['t_5fignore',['t_ignore',['../group__ply.html#gacf2bf43a086bb0b1ce8bb8d0f6c68db1',1,'py']]],
-  ['t_5fignore_5fcomment',['t_ignore_COMMENT',['../group__ply.html#gad4761afdb161b9487d4c2512953844fb',1,'py']]],
-  ['t_5fnewline',['t_newline',['../group__ply.html#gaa0916741e0701b6d8d05e27a1f66de24',1,'py']]],
-  ['t_5fsym',['t_SYM',['../group__ply.html#gac715f3ca1c9b716b3317fbf12c060ea8',1,'py']]],
-  ['tag',['tag',['../classpy_1_1Sym.html#a7efe3be62c6b6e24dfee535153238d8a',1,'py::Sym']]],
-  ['tokens',['tokens',['../group__ply.html#gae98a1e34ce00c53c8ef4e59d5e43c3d1',1,'py']]]
+  ['syntax_20parser_20_28lexer_20only_29',['Syntax parser (lexer only)',['../group__ply.html',1,'']]],
+  ['save',['save',['../classpy_1_1GUI__thread.html#a08426afca68c50f17335c89ed680e80e',1,'py::GUI_thread']]],
+  ['semicolon',['semicolon',['../group__interpret.html#gabc94841419435a7eee822343ec424907',1,'py::FVM']]],
+  ['setupeditor',['SetupEditor',['../classpy_1_1GUI__thread.html#aba85e0fade6c0f79fd7abf14bd3c52f8',1,'py::GUI_thread']]],
+  ['setupmenu',['SetupMenu',['../classpy_1_1GUI__thread.html#a22dd1da2ff0b79deafb61ee4b4de00a1',1,'py::GUI_thread']]],
+  ['src',['SRC',['../group__fvm.html#ga6a89825185fa2934bef92a2d63439616',1,'py']]],
+  ['stack_20operations',['Stack operations',['../group__stack.html',1,'']]],
+  ['status',['status',['../classpy_1_1GUI__thread.html#adc6a610711e210133259dbe303e101fa',1,'py::GUI_thread']]],
+  ['str',['Str',['../classpy_1_1Str.html',1,'py']]],
+  ['sym',['Sym',['../classpy_1_1Sym.html',1,'py']]],
+  ['symbolic_20object_20system',['Symbolic object system',['../group__sym.html',1,'']]]
 ];

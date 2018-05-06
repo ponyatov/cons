@@ -1,4 +1,8 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classpy_1_1Sym.html" title="base Symbolic object " alt="" coords="5,5,72,32"/>
-<area shape="rect" id="node2" href="$classpy_1_1FVM.html" title="o/FORTH Virtual Machine " alt="" coords="120,5,188,32"/>
+<area shape="rect" id="node1" href="$classpy_1_1Sym.html" title="base Symbolic object " alt="" coords="5,107,72,133"/>
+<area shape="rect" id="node2" href="$classpy_1_1FVM.html" title="o/FORTH Virtual Machine " alt="" coords="127,5,195,32"/>
+<area shape="rect" id="node3" href="$classpy_1_1Method.html" title="wrapper for methods defined in VM " alt="" coords="120,56,203,83"/>
+<area shape="rect" id="node4" href="$classpy_1_1Num.html" title="number " alt="" coords="127,107,195,133"/>
+<area shape="rect" id="node5" href="$classpy_1_1Str.html" title="string " alt="" coords="133,157,190,184"/>
+<area shape="rect" id="node6" href="$classpy_1_1Vector.html" title="vector, can be executed as seqential program /ordered container/ " alt="" coords="122,208,201,235"/>
 </map>

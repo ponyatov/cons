@@ -1,2 +1,6 @@
 # interactive console
-1 2 3 
+1 2.3 -4e+05	( numbers ) ? . ?
+
+: gui ;
+
+gui
