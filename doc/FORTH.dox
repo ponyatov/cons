@@ -1,0 +1,24 @@
+/**
+
+@page forth o/FORTH programming language
+
+o/FORTH is a Forth-like language dialect based on the pure object model.
+
+- FORTH has an extra simple syntax you can parse in a few machine instructions,
+- and this syntax compliant with mobile phone usage in one hand:
+you can't do a complex edition using only one finger on a tiny screen
+with traditional algolic/C syntaxes, branching definitions, brackets
+and lot of nested function calls  
+
+@section forthbib Links and biblography
+
+- Starting FORTH (c) Leo Brodie
+  - https://www.forth.com/starting-forth/
+  
+- Thinking Forth (c) Leo Brodie [PDF]
+  - http://thinking-forth.sourceforge.net/tf-kindle.pdf
+
+- Threaded Interpretive Languages: Their Design and Implementation (c) R. G. Loeliger [PDF]
+  - http://sinclairql.speccy.org/archivo/docs/books/Threaded_interpretive_languages.pdf
+
+*/
