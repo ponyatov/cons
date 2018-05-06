@@ -84,7 +84,15 @@ class Num(Sym): pass
 class Str(Sym): pass
 
 ## vector, can be executed as seqential program /ordered container/  
-class Vector(Sym): pass
+class Vector(Sym):
+    ## execute vectored definition in sequence
+    def __call__(self):
+        for i in self.nest: i()
+    ## "disassemble" definition
+    def disass(self):
+        S = ''
+        for i in self.nest: S += str(i)
+        return S
 
 ## wrapper for methods defined in VM 
 class Method(Sym):
@@ -149,13 +157,24 @@ class FVM(Sym):
         # fill vocabulary
         self['.'] = Method(self.DROPALL)
         self['?'] = Method(self.PrintStack)
+        self['??'] = Method(self.dump)
         self[':'] = Method(self.colon)
         self[';'] = Method(self.semicolon)
+        self['?dis'] = Method(self.DisAssemble)
         ## contains current definition of False (as interepreter mode flag)
         self.COMPILE = False
         # run interpreter
 #         self['SRC'] = Str(src)
         self.INTERPRET(src)
+        
+    ## @defgroup debug Debug
+    ## @ingroup fvm
+    ## @{
+    
+    ## `?dis <word> ( -- )` disassemble named definition
+    def DisAssemble(self): self.WORD() ; self.FIND() ; print self.pop().disass()
+    
+    ## @}
     
     ## @defgroup stack Stack operations
     ## @ingroup fvm
